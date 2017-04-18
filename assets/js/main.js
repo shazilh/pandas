@@ -1,21 +1,19 @@
-var botonUno = document.getElementById("boton1");
-var parrafoUno = document.getElementById("parrafo1");
-var imagen= document.getElementsByClassName("imagen")[0];
-var span = [];
+var cerrar = document.getElementsByClassName("close");
 
-for (var i = 0; i < 4; i++){
-  span[i]=document.getElementsByClassName("close")[0];
-  span[i].addEventListener("click",cerrar);
+for(var i = 0; i<cerrar.length; i++){
+ cerrar[i].addEventListener("click",cerrarImagen)
 }
 
-function cerrar() {
-  imagen.style.display = "none";
+function cerrarImagen(){
+ var div= this.parentElement;
+ div.style.display = "none";
 }
 
-function ocultarParrafo() {
-  parrafoUno.style.visibility = "hidden";
-}
+var btnRestaurar = document.getElementById("btnRestaurar");
+btnRestaurar.addEventListener("click", restaurarImagenes);
 
-function mostrarParrafo(){
-  parrafoUno.style.visibility = "visible";
+function restaurarImagenes(){
+ for(var i = 0; i<cerrar.length; i++){
+   cerrar[i].parentElement.style.display = "inline-block";
+ }
 }
