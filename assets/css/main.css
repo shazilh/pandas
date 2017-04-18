@@ -1,11 +1,11 @@
 body{
-  background-image: url(https://2.bp.blogspot.com/-bfx7f2ws3u4/VvKoJ2Jq6cI/AAAAAAAABtw/YgOCjXCi6C0BzwqIMa86LEEoCu1CuPfnQ/s1600/Sin%2Bt%25C3%25ADtulo-8.png);
+  background-color:lightgreen;
 }
 header{
   font-size: 35px;
 }
 ul {
-  background-color: black;
+  background-color: orange;
 }
 li {
   display:inline-block;
@@ -26,4 +26,65 @@ a:hover{
 span{
   color:red;
   margin: 0 100px;
+}
+
+img{
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  border-top: 3px  solid #E7286B;
+  border-right: : 3px  solid #E7286B;
+  border-bottom: 3px  solid #E7286B;
+}
+
+div{
+  display: inline-block;
+  margin-left: 7%;
+}
+
+
+
+div{
+  display: inline-block;
+  margin-left: 7%;
+  padding-top: 1%;
+  position: relative;
+}
+
+.botones{
+  text-align: center;
+  background-color: #8455F2;
+  margin-top: 2%;
+  padding-top: 0%;
+  padding-bottom: 1%;
+  font-family: 'Palanquin Dark', sans-serif;
+  font-size: 20px;
+  color:#FFFFFF;
+}
+.boton:hover{
+  color: #F80A71;
+}
+
+.parrafo{
+  display: inline-block;
+  background-color: #FFFFFF;
+  width: 500px;
+  margin-top: 1%;
+  margin-left: 10%;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-right: 4px;
+  padding-left: 4px;
+  border-top: 3px  solid #E7286B;
+  border-bottom: 3px  solid #E7286B;
+  font-family: 'Architects Daughter', cursive;
+  font-size: 14px;
+  text-align: center;
+
 }
