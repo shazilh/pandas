@@ -16,4 +16,35 @@ function restaurarImagenes(){
  for(var i = 0; i<cerrar.length; i++){
    cerrar[i].parentElement.style.display = "inline-block";
  }
+
+ //para mostrar y quitar parrafos
+}
+var textoIzq = document.getElementById("izq");
+var textoDer = document.getElementById("der");
+//Función que verifica los links
+var btn1=document.getElementById("boton1");
+var btn2=document.getElementById("boton2");
+    btn1.addEventListener("click",ocultarDer);
+    btn1.addEventListener("dblclick",mostrarDer);
+    btn2.addEventListener("click",ocultarIzq);
+    btn2.addEventListener("dblclick",mostrarIzq);
+
+
+// Función para ocultar elementos
+function ocultarDer() {
+   //textoIzq.style.visibility = "hidden";
+   textoDer.style.visibility = "hidden";
+}
+function ocultarIzq() {
+   textoIzq.style.visibility = "hidden";
+   //textoDer.style.visibility = "hidden";
+}
+
+// Función para mostrar el texto
+function mostrarDer() {
+   textoDer.style.visibility = "visible"
+ }
+ function mostrarIzq() {
+   textoIzq.style.visibility = "visible";
+
 }
